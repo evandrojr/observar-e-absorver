@@ -4,28 +4,118 @@
 	<title>Observar e Absorver</title>
   <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
   <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
-
   <script type="text/javascript" src="js/sugar.min.js"></script>
   <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
   <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
-
 </head>
 <body>
 
-<div data-role="page">
-
-	<div data-role="header">
+<!-- Página Main -->
+<div id="main" data-role="page">
+	<header data-role="header">
 		<h1>Observar e Absorver</h1>
-	</div><!-- /header -->
-
+	</header><!-- /header -->
 	<div data-role="content">
-		<p>Hello world</p>
+    <div align="center">
+      <img src="img/rosto.jpg">
+    </div>
+    <BR><BR>
+    <ul data-role="listview" >
+    	<li><a href="http://observareabsorver.blogspot.com.br/" data-transition="slidedown">Blog</a></li>
+    	<li><a href="#videos" data-transition="slidedown">Vídeos</a></li>
+    	<li><a href="http://observareabsorver-vendadetrabalhos.blogspot.com.br/">Contato e Trabalhos</a></li>
+    </ul>
 	</div><!-- /content -->
-
+  <footer data-role="footer" data-position="fixed">
+    <h1><a href="#evandrojr" data-transition="slidedown">projeto por evandrojr</a></h1>
+  </footer><!-- /header -->
 </div><!-- /page -->
+<!-- Fim Página Main -->
+
+<!-- Página Vídeos -->
+<div id="videos" data-role="page">
+	<header data-role="header">
+    <a href="#main" data-role="button" data-icon="arrow-l" data-transition="flip">Voltar</a>
+    <h1>Observar e Absorver</h1>
+	</header><!-- /header -->
+	<div data-role="content">
+
+    <div class="embed-video widget uib_w_2 d-margins" data-uib="media/youtube">
+      <iframe src="https://www.youtube.com/embed/wmVEp26o2b0?wmode=transparent">
+      </iframe>
+    </div>
+    <div class="embed-video widget uib_w_11 d-margins" data-uib="media/youtube" data-ver="0">
+      <iframe src="https://www.youtube.com/embed/9fmurlcXf9M?wmode=transparent">
+      </iframe>
+    </div>
+    <div class="embed-video widget uib_w_9 d-margins" data-uib="media/youtube" data-ver="0">
+      <iframe src="https://www.youtube.com/embed/Nmob5e4ceJE?wmode=transparent">
+      </iframe>
+    </div>
+    <div class="embed-video widget uib_w_10 d-margins" data-uib="media/youtube" data-ver="0">
+      <iframe src="https://www.youtube.com/embed/nIOts0hHfTc?wmode=transparent">
+      </iframe>
+    </div>
+
+    <div class="embed-video widget uib_w_10 d-margins" data-uib="media/youtube" data-ver="0">
+      <iframe src="https://www.youtube.com/embed/V64_fLAVqR0?wmode=transparent">
+      </iframe>
+    </div>
+
+    <div class="embed-video widget uib_w_10 d-margins" data-uib="media/youtube" data-ver="0">
+      <iframe src="https://www.youtube.com/embed/eJDFU8N7hYI?wmode=transparent">
+      </iframe>
+    </div>
+
+    <div class="embed-video widget uib_w_10 d-margins" data-uib="media/youtube" data-ver="0">
+      <iframe src="https://www.youtube.com/embed/vC0aA9hgHwI?wmode=transparent">
+      </iframe>
+    </div>
+	</div><!-- /content -->
+  <footer data-role="footer" data-position="fixed">
+    <h1><a href="#evandrojr" data-transition="slidedown">projeto por evandrojr</a></h1>
+  </footer><!-- /header -->
+</div><!-- /page -->
+<!-- Fim Página Vídeos -->
+
+
+<!-- Página evandrojr -->
+<div id="evandrojr" data-role="page">
+  <header data-role="header">
+    <a href="#main" data-role="button" data-icon="arrow-l" data-transition="flip">Voltar</a>
+    <h1>Observar e Absorver</h1>
+	</header><!-- /header -->
+	<div data-role="content">
+    <div align="center">
+      <img src="img/rosto.jpg">
+    </div>
+
+    <div data-role="header">
+  		<h1>Employee Details</h1>
+  	</div>
+
+    <div data-role="content">
+
+    	<img id="employeePic"/>
+  	<div id="employeeDetails">
+         <h3 id="fullName"></h3>
+         <p id="employeeTitle"></p>
+         <p id="city"></p>
+     	</div>
+
+      <ul id="actionList" data-role="listview" data-inset="true"></ul>
+
+    </div>
+
+	</div><!-- /content -->
+  <footer data-role="footer" data-position="fixed">
+    <h1>projeto por evandrojr</h1>
+  </footer><!-- /header -->
+</div><!-- /page -->
+<!-- Fim Página Main -->
+
 
 </body>
 </html>
